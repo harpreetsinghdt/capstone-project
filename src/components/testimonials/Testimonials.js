@@ -1,4 +1,3 @@
-import "./Testimonials.css";
 import TestimonialsCard from "./TestimonialsCard";
 import { useState, useEffect } from "react";
 
@@ -10,6 +9,7 @@ const Testimonials = () => {
       const response = await fetch("https://randomuser.me/api/?results=4");
       const data = await response.json();
       setUsers(data.results);
+      // console.log(data);
     } catch (err) {
       console.log("ERROR: ", err);
     }

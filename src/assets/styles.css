@@ -22,11 +22,6 @@ code {
 	color: #f4ce14 !important;
 }
 
-.hover:hover {
-	background-color: #f4ce14;
-	border-radius: 15px;
-}
-
 .logo-height {
 	width: 20rem;
 }
@@ -34,7 +29,6 @@ code {
 .nav-font {
 	font-size: x-large;
 }
-
 
 .lemon-primary-lemon {
 	color: #f4ce14;
@@ -60,7 +54,7 @@ code {
 .reserve-btn {
 	width: 150px;
 	border: none;
-	border-radius: 5px;
+	border-radius: 0px;
 	background: #f4ce14;
 	padding: 10px;
 	font-size: 17px;
@@ -130,12 +124,12 @@ code {
 	background: linear-gradient(rgba(0, 0, 0, 0.455), rgba(0, 0, 0, 0.455)),
 		url('./images/specials/hero.jpg') no-repeat center / cover;
 	overflow: hidden;
-	border-radius: 5px;
+	border-radius: 0px;
 }
 
 .para p:nth-last-child(1) {
 	background-color: #00000054;
-	border-radius: 5px;
+	border-radius: 0px;
 	padding: 0 0 0 7px;
 }
 
@@ -161,6 +155,109 @@ code {
 	float: right;
 }
 
-.menu h1, .menu h2{
+.menu h1,
+.menu h2 {
 	text-align: center;
+}
+
+.about-pic {
+	width: 100%;
+	height: auto;
+	border-radius: 0px;
+}
+
+@media only screen and (min-width: 1200px) {
+	.about-pic {
+		max-width: 456px;
+	}
+}
+
+.card {
+	position: relative;
+	width: 320px;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border: none;
+}
+
+.card .imgBx {
+	position: relative;
+	width: 100%;
+	height: 250px;
+	background: #f00;
+	border-radius: 0px 0px 0 0;
+}
+
+.special-body card {
+	flex-shrink: 3;
+}
+
+.card .content {
+	position: relative;
+	width: 100%;
+	height: 150px;
+	background: #495e57;
+	border-radius: 0 0 0px 0px;
+}
+
+.testimonial {
+	background: #edefee;
+	border-radius: 0px;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 670px) {
+	.pd {
+		padding: 10px 35px;
+	}
+}
+
+.test-img {
+	border-radius: 50%;
+}
+
+.center {
+	text-align: center;
+}
+
+.light {
+	background: white;
+	border-radius: 0px;
+	margin: 10px;
+}
+
+.col,
+.col-50,
+.col-25 {
+	flex-basis: 100%;
+}
+
+@media only screen and (min-width: 670px) {
+	.col-50 {
+		flex-basis: 40%;
+	}
+}
+
+@media only screen and (min-width: 940px) {
+	.col-50 {
+		flex-basis: 22%;
+	}
+}
+
+.star-rating {
+	text-align: center;
+}
+
+.star-rating span {
+	font-size: 25px;
+	margin-right: 3px;
+}
+.star-rating .checked {
+	color: orange;
 }

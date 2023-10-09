@@ -1,5 +1,3 @@
-import './Card.css';
-
 const lorem = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.';
 
 const Card = ({ data }) => {

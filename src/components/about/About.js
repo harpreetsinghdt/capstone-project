@@ -1,4 +1,3 @@
-import './About.css';
 import AboutPic1 from '../../assets/images/about/aboutus1.jpg';
 import AboutPic2 from '../../assets/images/about/aboutus2.jpg';
 

@@ -2,7 +2,7 @@ import brus from '../assets/images/specials/bruschetta.jpg';
 import greek from '../assets/images/specials/greekSalad.jpg';
 import dessert from '../assets/images/specials/dessert.jpg';
 import Hero from '../components/internal/Hero';
-import Special from '../components/internal/Special';
+import Special from './internal/Specials';
 import Testimonials from '../components/testimonials/Testimonials';
 import '../assets/styles.css';
 const data = [

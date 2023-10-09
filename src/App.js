@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import About from './components/about/About';
 import Menu from './components/menu/Menu';
-import Reservation from './components/reservation/Reservation';
+import Reservation from './components/booking/BookingPage';
 import Onlineorder from './components/onlineorder/Onlineorder';
 import Login from './components/Login';
 

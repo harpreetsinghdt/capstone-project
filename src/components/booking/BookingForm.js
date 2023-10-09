@@ -1,6 +1,5 @@
 import { useState, useContext } from 'react';
 import AppContext from './AppContext';
-import './BookingForm.css';
 
 const validateEmail = (email) => {
 	return String(email)
@@ -81,9 +80,9 @@ const BookingForm = () => {
 		e.preventDefault();
 		setMsg({
 			...msg,
-			line1: `Dear ${name.firstName} ${name.lastName}:`,
-			line2: `Your table for party of ${guests} is reserved for ${date} at ${time}.`,
-			line3: `We will see you soon for the ${occasion} event!`,
+			line1: `Dear ${name.firstName} ${name.lastName}, Thank you reserving a table with us.`,
+			line2: `Your table for ${occasion} of ${guests} is reserved for ${date} at ${time}.`,
+			line3: `We will be happy to welcome you at our restaurant for the celebration of ${occasion}`,
 		});
 		setConfirm(true);
 	};
@@ -221,6 +220,7 @@ const BookingForm = () => {
 
 				<button
 					type='submit'
+					aria-label='On Click'
 					className='col-md-6 btn btn-primary my-4'
 					style={{ maxWidth: '440px' }}
 					disabled={!isGood()}>

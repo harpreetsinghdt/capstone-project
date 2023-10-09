@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import ReservationForm from './ReservationForm';
-import ReservationConfirm from './ReservationConfirm';
+import ReservationForm from './BookingForm';
+import ReservationConfirm from './BookingConfirm';
 import AppContext from './AppContext';
-import { fetchAPI } from './MasterApi';
+import { MasterApi } from './MasterApi';
 
 const Reserve = () => {
 	const [confirm, setConfirm] = useState(false);
@@ -16,7 +16,7 @@ const Reserve = () => {
 
 	useEffect(() => {
 		const date = new Date();
-		const times = fetchAPI(date);
+		const times = MasterApi(date);
 		setAvailableTimes(times);
 	}, []);
 
